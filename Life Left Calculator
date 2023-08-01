@@ -1,0 +1,20 @@
+
+age = input("What is your current age? ")
+
+#subtract age from 90
+yearsLeft = 90 - int(age)
+
+
+#multiply answer by 365, store as days
+daysLeft = yearsLeft * 365
+
+#multiply answer by 52, store as weeks
+weeksLeft = yearsLeft * 52
+
+#mulitply answer by 12, store as months
+monthtLeft = yearsLeft * 12
+
+#print answer
+print(f"You have {daysLeft} days, {weeksLeft} weeks, and {monthtLeft} months left.")
+
+print(6 + 4 / 2 - (1 * 2))
