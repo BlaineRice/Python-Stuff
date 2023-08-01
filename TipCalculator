@@ -1,0 +1,24 @@
+print("Welcome to the tip calculator!")
+print()
+
+#Gathering input from the user
+total = float(input("How much was the bill? \n$"))
+numOfPeople = float(input("How many people split the bill? \n"))
+tip = float(input("What percentage would you like to tip? 10, 12, or 15? \n"))
+
+#Compute math
+
+#Change tip to percentage
+tipPercent = tip/100
+
+#Add percentage to new total
+totalWithTip = total * tipPercent
+finalTotal = total + totalWithTip
+
+#Compute final total and split
+newTotal = finalTotal / numOfPeople
+
+#Round to two decimal places
+totalRounded = "{:.2f}".format(newTotal)
+
+print(f"Everyone should pay {totalRounded}")
