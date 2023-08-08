@@ -1,0 +1,15 @@
+# A simple calculator for calculating how many differnt combinations of a certain amount of
+# object you can have
+
+import math
+
+userInput = int(input('How many objects do you have?: '))
+
+def factor(userInput):
+    answer = math.factorial(userInput)
+    return answer
+
+
+answer = factor(userInput)
+
+print(f"There are {answer} different combinations!")
